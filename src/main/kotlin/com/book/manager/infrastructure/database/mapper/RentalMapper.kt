@@ -43,7 +43,7 @@ interface RentalMapper {
         Result(column="book_id", property="bookId", jdbcType=JdbcType.BIGINT, id=true),
         Result(column="user_id", property="userId", jdbcType=JdbcType.BIGINT),
         Result(column="rental_datetime", property="rentalDatetime", jdbcType=JdbcType.TIMESTAMP),
-        Result(column="return_datetime", property="returnDatetime", jdbcType=JdbcType.TIMESTAMP)
+        Result(column="return_deadline", property="returnDeadline", jdbcType=JdbcType.TIMESTAMP)
     ])
     fun selectMany(selectStatement: SelectStatementProvider): List<RentalRecord>
 
