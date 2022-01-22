@@ -3,7 +3,6 @@ package com.book.manager.infrastructure.database.mapper.custom
 import com.book.manager.infrastructure.database.record.custom.BookWithRentalRecord
 import org.apache.ibatis.annotations.Mapper
 import org.apache.ibatis.annotations.Result
-import org.apache.ibatis.annotations.ResultMap
 import org.apache.ibatis.annotations.Results
 import org.apache.ibatis.annotations.SelectProvider
 import org.apache.ibatis.type.JdbcType
