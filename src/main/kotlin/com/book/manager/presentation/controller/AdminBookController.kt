@@ -1,6 +1,7 @@
 package com.book.manager.presentation.controller
 
 import RegistarBookRequest
+import UpdateBookRequest
 import com.book.manager.application.service.AdminBookService
 import com.book.manager.domain.model.Book
 import org.springframework.web.bind.annotation.*
@@ -21,5 +22,10 @@ class AdminBookController(
                 request.releaseDate
             )
         )
+    }
+
+    @PutMapping("/update")
+    fun update(@RequestBody request: UpdateBookRequest) {
+        adminBookService.update(request.id, request.title, request.author, request.releaseDate)
     }
 }
