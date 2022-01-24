@@ -38,6 +38,10 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-aop")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+	//JUnit
+	testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.1")
+	testImplementation("org.assertj:assertj-core:3.19.0")
 }
 
 tasks.withType<KotlinCompile> {
