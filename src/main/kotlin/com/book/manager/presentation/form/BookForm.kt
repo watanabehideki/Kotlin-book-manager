@@ -33,8 +33,8 @@ data class GetBookDetailResponse(
 
 data class RentalInfo(
     val  userId: Long,
-    val rentalDate: LocalDateTime,
-    val returnDeadLine: LocalDateTime
+    val rentalDatetime: LocalDateTime,
+    val returnDeadline: LocalDateTime
 ) {
     constructor(rental: Rental) : this(rental.userId, rental.rentalDatetime, rental.returnDeadline)
 }

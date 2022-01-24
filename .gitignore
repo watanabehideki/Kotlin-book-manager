@@ -8,6 +8,7 @@ cookie.txt
 
 ### Docker ###
 docker/db
+docker/redis
 
 ### STS ###
 .apt_generated
